@@ -1,7 +1,0 @@
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/CalibrateArmData.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/CalibrateArmEnable.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/TareData.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/TareEnable.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateSource.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateSources.idl
-/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateStatus.idl

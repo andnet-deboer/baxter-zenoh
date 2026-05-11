@@ -13,18 +13,10 @@ unset ROS_HOSTNAME
 
 export RMW_IMPLEMENTATION=rmw_zenoh_cpp
 
-# Build parameter_bridge argument list from bridge_topics.yaml
-# ros2_to_ros1 → topic@ros2_type[ros1_type
-# ros1_to_ros2 → topic@ros2_type]ros1_type
-mapfile -t TOPICS < <(python3 - <<'EOF'
-import yaml, sys
-with open("/bridge_topics.yaml") as f:
-    cfg = yaml.safe_load(f)
-for e in cfg.get("ros2_to_ros1", []):
-    print(f"{e['topic']}@{e['ros2']}[{e['ros1']}")
-for e in cfg.get("ros1_to_ros2", []):
-    print(f"{e['topic']}@{e['ros2']}]{e['ros1']}")
-EOF
-)
+exec ros2 run rmw_zenoh_cpp rmw_zenohd & sleep 3
 
-exec ros2 run ros1_bridge parameter_bridge "${TOPICS[@]}"
+rosparam load /bridge_topics.yaml
+
+exec ros2 run ros1_bridge parameter_bridge 
+
+# exec ros2 run ros1_bridge dynamic_bridge --bridge-all-topics

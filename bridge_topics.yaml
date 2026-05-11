@@ -1,270 +1,255 @@
-# Baxter ROS1↔ROS2 bridge topic configuration
+# Baxter ROS1 - ROS2 bridge configuration
 #
-# ros2_to_ros1: command data       ROS 2 host → Baxter  ([ direction)
-# ros1_to_ros2: sensor/state data  Baxter → ROS 2 host  (] direction)
+# Loaded onto the ROS1 parameter server with:  rosparam load /bridge_topics.yaml
+# Read by parameter_bridge at startup from params:  topics / services_1_to_2
 #
-# EXCLUDED (not bridgeable):
-#   /ExternalTools/*/FKServer|IKServer/*  — ROS service request/reply wire topics, not pub/sub
-#   /rosout /rosout_agg                   — type mismatch (rosgraph_msgs vs rcl_interfaces)
-#   /tf2_web_republisher/*                — ROS action wire topics
-#   /hdraw                                — internal Baxter UI rendering bus
-#   /robot/collision_object               — requires moveit_msgs (not in bridge)
-#   /robot/attached_collision_object      — same
-#   /robustcontroller/*                   — internal calibration FSM; add manually if needed
-#   *_names topics                        — std_msgs/String metadata, not useful to bridge
+# topics          — bidirectional; data flows where it is published
+#   type          — ROS 2 message type (bridge auto-maps to ROS 1 via mapping_rules.yaml)
 #
-# ALSO EXCLUDED — use MotorControlMsgs (private Rethink Robotics package, not in bridge):
-#   /robot/accelerometer_states, /robot/joint_limits
-#   /robot/limb/*/limb_state, stiffness, stiffness_constraint, twist_speed_constraint,
-#     velocity_controller_state, weight_integral_terms, command_joint_position,
-#     command_nullspace_setpoint_and_twist_stamped, command_stiffness_limit,
-#     command_twist_speed_limit, command_twist_speed_limit_scale,
-#     set_damping_correction_weights, set_feed_forward_weights
-#   /robot/end_effector/*/set_object_mass
-#   /robot/homing_states
-#   /collision/*/collision_detection, /collision/*/debug
+# services_1_to_2 — ROS 1 services callable from ROS 2
+#   type          — pkg/SrvName  (ROS 1 style, no "srv/" prefix)
 
+topics:
 
-# ── Commands: ROS 2 → ROS 1 ──────────────────────────────────────────────────
+  # ── Robot top-level state ───────────────────────────────────────────────────
+  - { topic: /robot/state,                type: baxter_core_msgs/msg/AssemblyState }
+  - { topic: /robot/assembly/left/state,  type: baxter_core_msgs/msg/AssemblyState }
+  - { topic: /robot/assembly/right/state, type: baxter_core_msgs/msg/AssemblyState }
+  - { topic: /robot/assembly/head/state,  type: baxter_core_msgs/msg/AssemblyState }
+  - { topic: /robot/assembly/torso/state, type: baxter_core_msgs/msg/AssemblyState }
 
-ros2_to_ros1:
+  # ── Robot enable / stop / reset / homing ───────────────────────────────────
+  - { topic: /robot/set_super_enable,      type: std_msgs/msg/Bool  }
+  - { topic: /robot/set_super_reset,       type: std_msgs/msg/Empty }
+  - { topic: /robot/set_super_stop,        type: std_msgs/msg/Empty }
+  - { topic: /robot/set_homing_mode,       type: std_msgs/msg/Bool  }
+  - { topic: /robot/set_motor_voltage_low, type: std_msgs/msg/Bool  }
 
-  # Robot enable / stop / reset / homing
-  - { topic: /robot/set_super_enable,      ros2: std_msgs/msg/Bool,  ros1: std_msgs/Bool  }
-  - { topic: /robot/set_super_reset,       ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/set_super_stop,        ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/set_homing_mode,       ros2: std_msgs/msg/Bool,  ros1: std_msgs/Bool  }
-  - { topic: /robot/set_motor_voltage_low, ros2: std_msgs/msg/Bool,  ros1: std_msgs/Bool  }
+  # ── Joints ─────────────────────────────────────────────────────────────────
+  - { topic: /robot/joint_states,          type: sensor_msgs/msg/JointState }
+  - { topic: /robot/ref_joint_states,      type: sensor_msgs/msg/JointState }
+  - { topic: /robot/joint_state_publish_rate, type: std_msgs/msg/Float64    }
 
-  # Joint commands
-  - { topic: /robot/limb/left/joint_command,          ros2: baxter_core_msgs/msg/JointCommand, ros1: baxter_core_msgs/JointCommand }
-  - { topic: /robot/limb/right/joint_command,         ros2: baxter_core_msgs/msg/JointCommand, ros1: baxter_core_msgs/JointCommand }
-  - { topic: /robot/limb/left/joint_command_timeout,  ros2: std_msgs/msg/Float64,              ros1: std_msgs/Float64             }
-  - { topic: /robot/limb/right/joint_command_timeout, ros2: std_msgs/msg/Float64,              ros1: std_msgs/Float64             }
-  - { topic: /robot/limb/left/set_speed_ratio,        ros2: std_msgs/msg/Float64,              ros1: std_msgs/Float64             }
-  - { topic: /robot/limb/right/set_speed_ratio,       ros2: std_msgs/msg/Float64,              ros1: std_msgs/Float64             }
-  - { topic: /robot/limb/left/command_velocity_tozero,  ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/command_velocity_tozero, ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/command_twist_stamped,  ros2: geometry_msgs/msg/TwistStamped, ros1: geometry_msgs/TwistStamped }
-  - { topic: /robot/limb/right/command_twist_stamped, ros2: geometry_msgs/msg/TwistStamped, ros1: geometry_msgs/TwistStamped }
-  - { topic: /robot/limb/left/use_default_spring_model,  ros2: std_msgs/msg/Bool, ros1: std_msgs/Bool }
-  - { topic: /robot/limb/right/use_default_spring_model, ros2: std_msgs/msg/Bool, ros1: std_msgs/Bool }
-  - { topic: /robot/joint_state_publish_rate, ros2: std_msgs/msg/Float64, ros1: std_msgs/Float64 }
+  # ── Accelerometers ─────────────────────────────────────────────────────────
+  - { topic: /robot/accelerometer/left_accelerometer/state,  type: sensor_msgs/msg/Imu }
+  - { topic: /robot/accelerometer/right_accelerometer/state, type: sensor_msgs/msg/Imu }
 
-  # Safety suppression (publish at ~10 Hz to keep suppressed)
-  - { topic: /robot/limb/left/suppress_collision_avoidance,    ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_collision_avoidance,   ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/suppress_cuff_interaction,       ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_cuff_interaction,      ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/suppress_gravity_compensation,   ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_gravity_compensation,  ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/suppress_contact_safety,         ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_contact_safety,        ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/suppress_body_avoidance,         ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_body_avoidance,        ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/left/suppress_hand_overwrench_safety, ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
-  - { topic: /robot/limb/right/suppress_hand_overwrench_safety,ros2: std_msgs/msg/Empty, ros1: std_msgs/Empty }
+  # ── Arm joint commands ─────────────────────────────────────────────────────
+  - { topic: /robot/limb/left/joint_command,          type: baxter_core_msgs/msg/JointCommand }
+  - { topic: /robot/limb/right/joint_command,         type: baxter_core_msgs/msg/JointCommand }
+  - { topic: /robot/limb/left/joint_command_timeout,  type: std_msgs/msg/Float64 }
+  - { topic: /robot/limb/right/joint_command_timeout, type: std_msgs/msg/Float64 }
+  - { topic: /robot/limb/left/set_speed_ratio,        type: std_msgs/msg/Float64 }
+  - { topic: /robot/limb/right/set_speed_ratio,       type: std_msgs/msg/Float64 }
+  - { topic: /robot/limb/left/command_velocity_tozero,  type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/command_velocity_tozero, type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/command_twist_stamped,  type: geometry_msgs/msg/TwistStamped }
+  - { topic: /robot/limb/right/command_twist_stamped, type: geometry_msgs/msg/TwistStamped }
+  - { topic: /robot/limb/left/command_stiffness,      type: std_msgs/msg/UInt32 }
+  - { topic: /robot/limb/right/command_stiffness,     type: std_msgs/msg/UInt32 }
+  - { topic: /robot/limb/left/inverse_dynamics_command, type: trajectory_msgs/msg/JointTrajectoryPoint }
+  - { topic: /robot/limb/right/inverse_dynamics_command,type: trajectory_msgs/msg/JointTrajectoryPoint }
+  - { topic: /robot/limb/left/use_default_spring_model,  type: std_msgs/msg/Bool }
+  - { topic: /robot/limb/right/use_default_spring_model, type: std_msgs/msg/Bool }
+  - { topic: /robot/limb/left/set_dominance,  type: std_msgs/msg/Bool }
+  - { topic: /robot/limb/right/set_dominance, type: std_msgs/msg/Bool }
 
-  # Head
-  - { topic: /robot/head/command_head_pan, ros2: baxter_core_msgs/msg/HeadPanCommand, ros1: baxter_core_msgs/HeadPanCommand }
-  - { topic: /robot/head/command_head_nod, ros2: std_msgs/msg/Bool,                   ros1: std_msgs/Bool                   }
+  # ── Arm safety suppression (publish at ~10 Hz while active) ────────────────
+  - { topic: /robot/limb/left/suppress_collision_avoidance,    type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_collision_avoidance,   type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/suppress_cuff_interaction,       type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_cuff_interaction,      type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/suppress_gravity_compensation,   type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_gravity_compensation,  type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/suppress_contact_safety,         type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_contact_safety,        type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/suppress_body_avoidance,         type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_body_avoidance,        type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/left/suppress_hand_overwrench_safety, type: std_msgs/msg/Empty }
+  - { topic: /robot/limb/right/suppress_hand_overwrench_safety,type: std_msgs/msg/Empty }
 
-  # Display
-  - { topic: /robot/xdisplay, ros2: sensor_msgs/msg/Image, ros1: sensor_msgs/Image }
+  # ── Arm state ──────────────────────────────────────────────────────────────
+  - { topic: /robot/limb/left/endpoint_state,            type: baxter_core_msgs/msg/EndpointState }
+  - { topic: /robot/limb/right/endpoint_state,           type: baxter_core_msgs/msg/EndpointState }
+  - { topic: /robot/limb/left/commanded_endpoint_state,  type: baxter_core_msgs/msg/EndpointState }
+  - { topic: /robot/limb/right/commanded_endpoint_state, type: baxter_core_msgs/msg/EndpointState }
+  - { topic: /robot/limb/left/gravity_compensation_torques,  type: baxter_core_msgs/msg/SEAJointState }
+  - { topic: /robot/limb/right/gravity_compensation_torques, type: baxter_core_msgs/msg/SEAJointState }
+  - { topic: /robot/limb/left/collision_avoidance_state,  type: baxter_core_msgs/msg/CollisionAvoidanceState  }
+  - { topic: /robot/limb/right/collision_avoidance_state, type: baxter_core_msgs/msg/CollisionAvoidanceState  }
+  - { topic: /robot/limb/left/collision_detection_state,  type: baxter_core_msgs/msg/CollisionDetectionState  }
+  - { topic: /robot/limb/right/collision_detection_state, type: baxter_core_msgs/msg/CollisionDetectionState  }
+  - { topic: /robot/limb/left/state,  type: baxter_core_msgs/msg/AssemblyState }
+  - { topic: /robot/limb/right/state, type: baxter_core_msgs/msg/AssemblyState }
 
-  # End effectors
-  - { topic: /robot/end_effector/left_gripper/command,              ros2: baxter_core_msgs/msg/EndEffectorCommand,    ros1: baxter_core_msgs/EndEffectorCommand    }
-  - { topic: /robot/end_effector/right_gripper/command,             ros2: baxter_core_msgs/msg/EndEffectorCommand,    ros1: baxter_core_msgs/EndEffectorCommand    }
-  - { topic: /robot/end_effector/left_gripper/configure,            ros2: baxter_core_msgs/msg/EndEffectorCommand,    ros1: baxter_core_msgs/EndEffectorCommand    }
-  - { topic: /robot/end_effector/right_gripper/configure,           ros2: baxter_core_msgs/msg/EndEffectorCommand,    ros1: baxter_core_msgs/EndEffectorCommand    }
-  - { topic: /robot/end_effector/left_gripper/rsdk/set_properties,  ros2: baxter_core_msgs/msg/EndEffectorProperties, ros1: baxter_core_msgs/EndEffectorProperties }
-  - { topic: /robot/end_effector/right_gripper/rsdk/set_properties, ros2: baxter_core_msgs/msg/EndEffectorProperties, ros1: baxter_core_msgs/EndEffectorProperties }
-  - { topic: /robot/end_effector/left_gripper/rsdk/set_state,       ros2: baxter_core_msgs/msg/EndEffectorState,      ros1: baxter_core_msgs/EndEffectorState      }
-  - { topic: /robot/end_effector/right_gripper/rsdk/set_state,      ros2: baxter_core_msgs/msg/EndEffectorState,      ros1: baxter_core_msgs/EndEffectorState      }
+  # ── Head ───────────────────────────────────────────────────────────────────
+  - { topic: /robot/head/command_head_pan, type: baxter_core_msgs/msg/HeadPanCommand }
+  - { topic: /robot/head/command_head_nod, type: std_msgs/msg/Bool                   }
+  - { topic: /robot/head/head_state,       type: baxter_core_msgs/msg/HeadState      }
+  - { topic: /robot/head/state,            type: baxter_core_msgs/msg/AssemblyState  }
 
-  # IO commands
-  - { topic: /robot/digital_io/command, ros2: baxter_core_msgs/msg/DigitalOutputCommand, ros1: baxter_core_msgs/DigitalOutputCommand }
-  - { topic: /robot/analog_io/command,  ros2: baxter_core_msgs/msg/AnalogOutputCommand,  ros1: baxter_core_msgs/AnalogOutputCommand  }
+  # ── Display ────────────────────────────────────────────────────────────────
+  - { topic: /robot/xdisplay, type: sensor_msgs/msg/Image }
 
-  # Sonar enable and lights
-  - { topic: /robot/sonar/head_sonar/set_sonars_enabled,      ros2: std_msgs/msg/Bool,   ros1: std_msgs/Bool   }
-  - { topic: /robot/sonar/head_sonar/lights/set_lights,       ros2: std_msgs/msg/UInt16, ros1: std_msgs/UInt16 }
-  - { topic: /robot/sonar/head_sonar/lights/set_green_level,  ros2: std_msgs/msg/Float32, ros1: std_msgs/Float32 }
-  - { topic: /robot/sonar/head_sonar/lights/set_red_level,    ros2: std_msgs/msg/Float32, ros1: std_msgs/Float32 }
+  # ── End effectors ──────────────────────────────────────────────────────────
+  - { topic: /robot/end_effector/left_gripper/command,              type: baxter_core_msgs/msg/EndEffectorCommand    }
+  - { topic: /robot/end_effector/right_gripper/command,             type: baxter_core_msgs/msg/EndEffectorCommand    }
+  - { topic: /robot/end_effector/left_gripper/rsdk/set_properties,  type: baxter_core_msgs/msg/EndEffectorProperties }
+  - { topic: /robot/end_effector/right_gripper/rsdk/set_properties, type: baxter_core_msgs/msg/EndEffectorProperties }
+  - { topic: /robot/end_effector/left_gripper/rsdk/set_state,       type: baxter_core_msgs/msg/EndEffectorState      }
+  - { topic: /robot/end_effector/right_gripper/rsdk/set_state,      type: baxter_core_msgs/msg/EndEffectorState      }
+  - { topic: /robot/end_effector/left_gripper/state,       type: baxter_core_msgs/msg/EndEffectorState      }
+  - { topic: /robot/end_effector/right_gripper/state,      type: baxter_core_msgs/msg/EndEffectorState      }
+  - { topic: /robot/end_effector/left_gripper/properties,  type: baxter_core_msgs/msg/EndEffectorProperties }
+  - { topic: /robot/end_effector/right_gripper/properties, type: baxter_core_msgs/msg/EndEffectorProperties }
 
-  # Additional arm commands
-  - { topic: /robot/limb/left/command_stiffness,       ros2: std_msgs/msg/UInt32,                       ros1: std_msgs/UInt32                       }
-  - { topic: /robot/limb/right/command_stiffness,      ros2: std_msgs/msg/UInt32,                       ros1: std_msgs/UInt32                       }
-  - { topic: /robot/limb/left/inverse_dynamics_command, ros2: trajectory_msgs/msg/JointTrajectoryPoint, ros1: trajectory_msgs/JointTrajectoryPoint   }
-  - { topic: /robot/limb/right/inverse_dynamics_command,ros2: trajectory_msgs/msg/JointTrajectoryPoint, ros1: trajectory_msgs/JointTrajectoryPoint   }
-  - { topic: /robot/limb/left/set_dominance,           ros2: std_msgs/msg/Bool,                         ros1: std_msgs/Bool                         }
-  - { topic: /robot/limb/right/set_dominance,          ros2: std_msgs/msg/Bool,                         ros1: std_msgs/Bool                         }
+  # ── Navigators ─────────────────────────────────────────────────────────────
+  - { topic: /robot/navigators/left_navigator/state,        type: baxter_core_msgs/msg/NavigatorState  }
+  - { topic: /robot/navigators/right_navigator/state,       type: baxter_core_msgs/msg/NavigatorState  }
+  - { topic: /robot/navigators/torso_left_navigator/state,  type: baxter_core_msgs/msg/NavigatorState  }
+  - { topic: /robot/navigators/torso_right_navigator/state, type: baxter_core_msgs/msg/NavigatorState  }
+  - { topic: /robot/navigators_states,                      type: baxter_core_msgs/msg/NavigatorStates }
 
+  # ── IO aggregate states ────────────────────────────────────────────────────
+  - { topic: /robot/digital_io_states, type: baxter_core_msgs/msg/DigitalIOStates }
+  - { topic: /robot/analog_io_states,  type: baxter_core_msgs/msg/AnalogIOStates  }
+  - { topic: /robot/digital_io/command, type: baxter_core_msgs/msg/DigitalOutputCommand }
+  - { topic: /robot/analog_io/command,  type: baxter_core_msgs/msg/AnalogOutputCommand  }
 
-# ── Sensor / state data: ROS 1 → ROS 2 ──────────────────────────────────────
+  # ── Digital IO individual states ────────────────────────────────────────────
+  - { topic: /robot/digital_io/head_green_light/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/head_lcd_auto_config/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/head_red_light/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/head_yellow_light/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_blow/state,              type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_button_back/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_button_ok/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_button_show/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_hand_camera_power/state, type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_inner_light/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_lower_button/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_lower_cuff/state,        type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_outer_light/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_pneumatic/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_shoulder_button/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_suck/state,              type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/left_upper_button/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/limit_switch_1/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/limit_switch_2/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/limit_switch_3/state,         type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/motor_fault_signal/state,     type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_blow/state,             type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_blue_light/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_button_back/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_button_ok/state,        type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_button_show/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_hand_camera_power/state,type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_inner_light/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_lower_button/state,     type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_lower_cuff/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_outer_light/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_pneumatic/state,        type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_shoulder_button/state,  type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_suck/state,             type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/right_upper_button/state,     type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_brake/state,            type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_brake_sensor/state,     type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_camera_power/state,     type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_digital_input0/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_foot_pedal/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_left_button_back/state, type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_left_button_ok/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_left_button_show/state, type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_left_inner_light/state, type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_left_outer_light/state, type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_process_sense0/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_process_sense1/state,   type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_right_button_back/state,type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_right_button_ok/state,  type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_right_button_show/state,type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_right_inner_light/state,type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_right_outer_light/state,type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_safety_stop/state,      type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_ui_output0/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_ui_output1/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_ui_output2/state,       type: baxter_core_msgs/msg/DigitalIOState }
+  - { topic: /robot/digital_io/torso_ui_output3/state,       type: baxter_core_msgs/msg/DigitalIOState }
 
-ros1_to_ros2:
+  # Analog IO individual states 
+  - { topic: /robot/analog_io/left_hand_range/state,              type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/left_hand_range/value_uint32,       type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/left_vacuum_sensor_analog/state,    type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/left_vacuum_sensor_analog/value_uint32, type: std_msgs/msg/UInt32            }
+  - { topic: /robot/analog_io/left_wheel/state,                   type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/left_wheel/value_uint32,            type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/right_hand_range/state,             type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/right_hand_range/value_uint32,      type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/right_vacuum_sensor_analog/state,   type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/right_vacuum_sensor_analog/value_uint32, type: std_msgs/msg/UInt32           }
+  - { topic: /robot/analog_io/right_wheel/state,                  type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/right_wheel/value_uint32,           type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/torso_fan/state,                    type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/torso_fan/value_uint32,             type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/torso_left_wheel/state,             type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/torso_left_wheel/value_uint32,      type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/torso_lighting/state,               type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/torso_lighting/value_uint32,        type: std_msgs/msg/UInt32               }
+  - { topic: /robot/analog_io/torso_right_wheel/state,            type: baxter_core_msgs/msg/AnalogIOState }
+  - { topic: /robot/analog_io/torso_right_wheel/value_uint32,     type: std_msgs/msg/UInt32               }
 
-  # Robot top-level state
-  - { topic: /robot/state,                ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-  - { topic: /robot/assembly/left/state,  ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-  - { topic: /robot/assembly/right/state, ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-  - { topic: /robot/assembly/head/state,  ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-  - { topic: /robot/assembly/torso/state, ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
+  # Range sensors 
+  - { topic: /robot/range/left_hand_range/state,  type: sensor_msgs/msg/Range }
+  - { topic: /robot/range/right_hand_range/state, type: sensor_msgs/msg/Range }
 
-  # Joints
-  - { topic: /robot/joint_states,     ros2: sensor_msgs/msg/JointState, ros1: sensor_msgs/JointState }
-  - { topic: /robot/ref_joint_states, ros2: sensor_msgs/msg/JointState, ros1: sensor_msgs/JointState }
+  # Sonar 
+  - { topic: /robot/sonar/head_sonar/state,              type: sensor_msgs/msg/PointCloud }
+  - { topic: /robot/sonar/head_sonar/sonars_enabled,     type: std_msgs/msg/Bool   }
+  - { topic: /robot/sonar/head_sonar/set_sonars_enabled, type: std_msgs/msg/UInt16 }
+  - { topic: /robot/sonar/head_sonar/lights/state,       type: std_msgs/msg/UInt16        }
+  - { topic: /robot/sonar/head_sonar/lights/green_level, type: std_msgs/msg/Float32       }
+  - { topic: /robot/sonar/head_sonar/lights/red_level,   type: std_msgs/msg/Float32       }
+  - { topic: /robot/sonar/head_sonar/lights/set_lights,      type: std_msgs/msg/UInt16  }
+  - { topic: /robot/sonar/head_sonar/lights/set_green_level, type: std_msgs/msg/Float32 }
+  - { topic: /robot/sonar/head_sonar/lights/set_red_level,   type: std_msgs/msg/Float32 }
 
-  # Accelerometers
-  - { topic: /robot/accelerometer/left_accelerometer/state,  ros2: sensor_msgs/msg/Imu, ros1: sensor_msgs/Imu }
-  - { topic: /robot/accelerometer/right_accelerometer/state, ros2: sensor_msgs/msg/Imu, ros1: sensor_msgs/Imu }
-
-  # Arm endpoint and torque
-  - { topic: /robot/limb/left/endpoint_state,            ros2: baxter_core_msgs/msg/EndpointState,  ros1: baxter_core_msgs/EndpointState  }
-  - { topic: /robot/limb/right/endpoint_state,           ros2: baxter_core_msgs/msg/EndpointState,  ros1: baxter_core_msgs/EndpointState  }
-  - { topic: /robot/limb/left/commanded_endpoint_state,  ros2: baxter_core_msgs/msg/EndpointState,  ros1: baxter_core_msgs/EndpointState  }
-  - { topic: /robot/limb/right/commanded_endpoint_state, ros2: baxter_core_msgs/msg/EndpointState,  ros1: baxter_core_msgs/EndpointState  }
-  - { topic: /robot/limb/left/gravity_compensation_torques,  ros2: baxter_core_msgs/msg/SEAJointState, ros1: baxter_core_msgs/SEAJointState }
-  - { topic: /robot/limb/right/gravity_compensation_torques, ros2: baxter_core_msgs/msg/SEAJointState, ros1: baxter_core_msgs/SEAJointState }
-
-  # Arm safety state
-  - { topic: /robot/limb/left/collision_avoidance_state,  ros2: baxter_core_msgs/msg/CollisionAvoidanceState,  ros1: baxter_core_msgs/CollisionAvoidanceState  }
-  - { topic: /robot/limb/right/collision_avoidance_state, ros2: baxter_core_msgs/msg/CollisionAvoidanceState,  ros1: baxter_core_msgs/CollisionAvoidanceState  }
-  - { topic: /robot/limb/left/collision_detection_state,  ros2: baxter_core_msgs/msg/CollisionDetectionState,  ros1: baxter_core_msgs/CollisionDetectionState  }
-  - { topic: /robot/limb/right/collision_detection_state, ros2: baxter_core_msgs/msg/CollisionDetectionState,  ros1: baxter_core_msgs/CollisionDetectionState  }
-
-  # Arm assembly state
-  - { topic: /robot/limb/left/state,  ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-  - { topic: /robot/limb/right/state, ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-
-  # Head
-  - { topic: /robot/head/head_state, ros2: baxter_core_msgs/msg/HeadState,    ros1: baxter_core_msgs/HeadState    }
-  - { topic: /robot/head/state,      ros2: baxter_core_msgs/msg/AssemblyState, ros1: baxter_core_msgs/AssemblyState }
-
-  # End effectors
-  - { topic: /robot/end_effector/left_gripper/state,       ros2: baxter_core_msgs/msg/EndEffectorState,      ros1: baxter_core_msgs/EndEffectorState      }
-  - { topic: /robot/end_effector/right_gripper/state,      ros2: baxter_core_msgs/msg/EndEffectorState,      ros1: baxter_core_msgs/EndEffectorState      }
-  - { topic: /robot/end_effector/left_gripper/properties,  ros2: baxter_core_msgs/msg/EndEffectorProperties, ros1: baxter_core_msgs/EndEffectorProperties }
-  - { topic: /robot/end_effector/right_gripper/properties, ros2: baxter_core_msgs/msg/EndEffectorProperties, ros1: baxter_core_msgs/EndEffectorProperties }
-
-  # Navigators (buttons on arms and torso)
-  - { topic: /robot/navigators/left_navigator/state,        ros2: baxter_core_msgs/msg/NavigatorState,  ros1: baxter_core_msgs/NavigatorState  }
-  - { topic: /robot/navigators/right_navigator/state,       ros2: baxter_core_msgs/msg/NavigatorState,  ros1: baxter_core_msgs/NavigatorState  }
-  - { topic: /robot/navigators/torso_left_navigator/state,  ros2: baxter_core_msgs/msg/NavigatorState,  ros1: baxter_core_msgs/NavigatorState  }
-  - { topic: /robot/navigators/torso_right_navigator/state, ros2: baxter_core_msgs/msg/NavigatorState,  ros1: baxter_core_msgs/NavigatorState  }
-  - { topic: /robot/navigators_states,                      ros2: baxter_core_msgs/msg/NavigatorStates, ros1: baxter_core_msgs/NavigatorStates }
-
-  # IO aggregate states
-  - { topic: /robot/digital_io_states, ros2: baxter_core_msgs/msg/DigitalIOStates, ros1: baxter_core_msgs/DigitalIOStates }
-  - { topic: /robot/analog_io_states,  ros2: baxter_core_msgs/msg/AnalogIOStates,  ros1: baxter_core_msgs/AnalogIOStates  }
-
-  # Digital IO individual states
-  - { topic: /robot/digital_io/head_green_light/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/head_lcd_auto_config/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/head_red_light/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/head_yellow_light/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_blow/state,              ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_button_back/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_button_ok/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_button_show/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_hand_camera_power/state, ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_inner_light/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_lower_button/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_lower_cuff/state,        ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_outer_light/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_pneumatic/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_shoulder_button/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_suck/state,              ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/left_upper_button/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/limit_switch_1/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/limit_switch_2/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/limit_switch_3/state,         ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/motor_fault_signal/state,     ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_blow/state,             ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_blue_light/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_button_back/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_button_ok/state,        ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_button_show/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_hand_camera_power/state,ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_inner_light/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_lower_button/state,     ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_lower_cuff/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_outer_light/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_pneumatic/state,        ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_shoulder_button/state,  ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_suck/state,             ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/right_upper_button/state,     ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_brake/state,            ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_brake_sensor/state,     ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_camera_power/state,     ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_digital_input0/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_foot_pedal/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_left_button_back/state, ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_left_button_ok/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_left_button_show/state, ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_left_inner_light/state, ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_left_outer_light/state, ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_process_sense0/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_process_sense1/state,   ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_right_button_back/state,ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_right_button_ok/state,  ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_right_button_show/state,ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_right_inner_light/state,ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_right_outer_light/state,ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_safety_stop/state,      ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_ui_output0/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_ui_output1/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_ui_output2/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-  - { topic: /robot/digital_io/torso_ui_output3/state,       ros2: baxter_core_msgs/msg/DigitalIOState, ros1: baxter_core_msgs/DigitalIOState }
-
-  # Analog IO individual states
-  - { topic: /robot/analog_io/left_hand_range/state,              ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/left_hand_range/value_uint32,       ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/left_vacuum_sensor_analog/state,    ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/left_vacuum_sensor_analog/value_uint32, ros2: std_msgs/msg/UInt32,            ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/left_wheel/state,                   ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/left_wheel/value_uint32,            ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/right_hand_range/state,             ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/right_hand_range/value_uint32,      ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/right_vacuum_sensor_analog/state,   ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/right_vacuum_sensor_analog/value_uint32, ros2: std_msgs/msg/UInt32,           ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/right_wheel/state,                  ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/right_wheel/value_uint32,           ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/torso_fan/state,                    ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/torso_fan/value_uint32,             ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/torso_left_wheel/state,             ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/torso_left_wheel/value_uint32,      ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/torso_lighting/state,               ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/torso_lighting/value_uint32,        ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-  - { topic: /robot/analog_io/torso_right_wheel/state,            ros2: baxter_core_msgs/msg/AnalogIOState, ros1: baxter_core_msgs/AnalogIOState }
-  - { topic: /robot/analog_io/torso_right_wheel/value_uint32,     ros2: std_msgs/msg/UInt32,               ros1: std_msgs/UInt32               }
-
-  # Range sensors
-  - { topic: /robot/range/left_hand_range/state,  ros2: sensor_msgs/msg/Range, ros1: sensor_msgs/Range }
-  - { topic: /robot/range/right_hand_range/state, ros2: sensor_msgs/msg/Range, ros1: sensor_msgs/Range }
-
-  # Sonar
-  - { topic: /robot/sonar/head_sonar/state,              ros2: sensor_msgs/msg/PointCloud, ros1: sensor_msgs/PointCloud }
-  - { topic: /robot/sonar/head_sonar/sonars_enabled,     ros2: std_msgs/msg/Bool,          ros1: std_msgs/Bool          }
-  - { topic: /robot/sonar/head_sonar/approach_alert,     ros2: std_msgs/msg/Bool,          ros1: std_msgs/Bool          }
-  - { topic: /robot/sonar/head_sonar/lights/state,       ros2: std_msgs/msg/UInt16,        ros1: std_msgs/UInt16        }
-  - { topic: /robot/sonar/head_sonar/lights/green_level, ros2: std_msgs/msg/Float32,       ros1: std_msgs/Float32       }
-  - { topic: /robot/sonar/head_sonar/lights/red_level,   ros2: std_msgs/msg/Float32,       ros1: std_msgs/Float32       }
-
-  # Diagnostics
-  - { topic: /diagnostics,                ros2: diagnostic_msgs/msg/DiagnosticArray,  ros1: diagnostic_msgs/DiagnosticArray  }
-  - { topic: /diagnostics_agg,            ros2: diagnostic_msgs/msg/DiagnosticArray,  ros1: diagnostic_msgs/DiagnosticArray  }
-  - { topic: /diagnostics_toplevel_state, ros2: diagnostic_msgs/msg/DiagnosticStatus, ros1: diagnostic_msgs/DiagnosticStatus }
+  # Diagnostics 
+  - { topic: /diagnostics,                type: diagnostic_msgs/msg/DiagnosticArray  }
+  - { topic: /diagnostics_agg,            type: diagnostic_msgs/msg/DiagnosticArray  }
+  - { topic: /diagnostics_toplevel_state, type: diagnostic_msgs/msg/DiagnosticStatus }
 
   # Cameras
-  - { topic: /cameras/left_hand_camera/image,            ros2: sensor_msgs/msg/Image,      ros1: sensor_msgs/Image      }
-  - { topic: /cameras/right_hand_camera/image,           ros2: sensor_msgs/msg/Image,      ros1: sensor_msgs/Image      }
-  - { topic: /cameras/left_hand_camera/camera_info,      ros2: sensor_msgs/msg/CameraInfo, ros1: sensor_msgs/CameraInfo }
-  - { topic: /cameras/right_hand_camera/camera_info,     ros2: sensor_msgs/msg/CameraInfo, ros1: sensor_msgs/CameraInfo }
-  - { topic: /cameras/left_hand_camera/camera_info_std,  ros2: sensor_msgs/msg/CameraInfo, ros1: sensor_msgs/CameraInfo }
-  - { topic: /cameras/right_hand_camera/camera_info_std, ros2: sensor_msgs/msg/CameraInfo, ros1: sensor_msgs/CameraInfo }
+  - { topic: /cameras/left_hand_camera/image,            type: sensor_msgs/msg/Image      }
+  - { topic: /cameras/right_hand_camera/image,           type: sensor_msgs/msg/Image      }
+  - { topic: /cameras/left_hand_camera/camera_info,      type: sensor_msgs/msg/CameraInfo }
+  - { topic: /cameras/right_hand_camera/camera_info,     type: sensor_msgs/msg/CameraInfo }
+  - { topic: /cameras/left_hand_camera/camera_info_std,  type: sensor_msgs/msg/CameraInfo }
+  - { topic: /cameras/right_hand_camera/camera_info_std, type: sensor_msgs/msg/CameraInfo }
 
   # TF
-  - { topic: /tf,        ros2: tf2_msgs/msg/TFMessage, ros1: tf2_msgs/TFMessage }
-  - { topic: /tf_static, ros2: tf2_msgs/msg/TFMessage, ros1: tf2_msgs/TFMessage }
+  - { topic: /tf,        type: tf2_msgs/msg/TFMessage }
+  - { topic: /tf_static, type: tf2_msgs/msg/TFMessage }
+
+  # Robust controllers (calibration / tare)
+  - { topic: /robustcontroller/left/CalibrateArm/enable,  type: baxter_maintenance_msgs/msg/CalibrateArmEnable }
+  - { topic: /robustcontroller/right/CalibrateArm/enable, type: baxter_maintenance_msgs/msg/CalibrateArmEnable }
+  - { topic: /robustcontroller/left/CalibrateArm/status,  type: baxter_maintenance_msgs/msg/CalibrateArmData   }
+  - { topic: /robustcontroller/right/CalibrateArm/status, type: baxter_maintenance_msgs/msg/CalibrateArmData   }
+  - { topic: /robustcontroller/left/Tare/enable,          type: baxter_maintenance_msgs/msg/TareEnable }
+  - { topic: /robustcontroller/right/Tare/enable,         type: baxter_maintenance_msgs/msg/TareEnable }
+  - { topic: /robustcontroller/left/Tare/status,          type: baxter_maintenance_msgs/msg/TareData   }
+  - { topic: /robustcontroller/right/Tare/status,         type: baxter_maintenance_msgs/msg/TareData   }
+  - { topic: /robustcontroller/left/rc_plugins_loaded,    type: std_msgs/msg/Bool }
+  - { topic: /robustcontroller/right/rc_plugins_loaded,   type: std_msgs/msg/Bool }
+
+
+# ROS 1 services callable from ROS 2 clients
+services_1_to_2:
+
+  # IK solver (left and right arms)
+  - { service: /ExternalTools/left/PositionKinematicsNode/IKServer,  type: baxter_core_msgs/SolvePositionIK }
+  - { service: /ExternalTools/right/PositionKinematicsNode/IKServer, type: baxter_core_msgs/SolvePositionIK }
+
+  # Camera management
+  - { service: /cameras/list_cameras, type: baxter_core_msgs/ListCameras }
+  - { service: /cameras/open_camera,  type: baxter_core_msgs/OpenCamera  }
+  - { service: /cameras/close_camera, type: baxter_core_msgs/CloseCamera }
