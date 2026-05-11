@@ -10,7 +10,12 @@ docker build -t baxter_bridge:latest .
 docker run --rm --network=host -t baxter_bridge:latest .
 ```
 
-3. In a separate terminal on your laptop, source the ROS 2 workspace
+3.
+```
+sudo apt install ros-$ROS_DISTRO-rmw-zenoh-cpp
+```
+
+4. In a separate terminal on your laptop, source the ROS 2 workspace
 ```
 source /opt/ros/kilted/setup.bash
 
@@ -23,5 +28,3 @@ source install/setup.bash
 
 run rviz2 or rqt
 ```
-
-
