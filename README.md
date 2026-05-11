@@ -7,5 +7,5 @@ docker build -t baxter_bridge:latest .
 
 2. 
 ```
-docker run --rm --network=host -t baxter_bridge:v0.2.0 .
+docker run --rm --network=host -t baxter_bridge:latest .
 ```
