@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a48f64cffdcdc39feba1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "baxter_maintenance_msgs__py",
+					"jsonFile" : "directory-baxter_maintenance_msgs__py-7955f9e92bc466687310.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/baxter_maintenance_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "baxter_maintenance_msgs__rs",
+					"jsonFile" : "directory-baxter_maintenance_msgs__rs-00f4f3c67a75ca9dfdd3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/baxter_maintenance_msgs__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "baxter_maintenance_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_baxter_maintenance_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_baxter_maintenance_msgs_egg-f431b6be36d91a599cf4.json",
+					"name" : "ament_cmake_python_build_baxter_maintenance_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_baxter_maintenance_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_baxter_maintenance_msgs-2f66abad14f02c95d421.json",
+					"name" : "ament_cmake_python_copy_baxter_maintenance_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs-9cbee4099c51c6bf437e.json",
+					"name" : "baxter_maintenance_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__cpp-7fc5dffe7df4932084d3.json",
+					"name" : "baxter_maintenance_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "baxter_maintenance_msgs__py::@8f5742e03c1026f51afe",
+					"jsonFile" : "target-baxter_maintenance_msgs__py-b856a7cee8bdccf64d3a.json",
+					"name" : "baxter_maintenance_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_generator_c-6aa36867cf73d075839e.json",
+					"name" : "baxter_maintenance_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_generator_py-dacd4a76cb1e1d4abba7.json",
+					"name" : "baxter_maintenance_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_generator_type_description-2d4291052b4e3bfbd0e2.json",
+					"name" : "baxter_maintenance_msgs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_c-be0bf1c74fd488e4db13.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_cpp-c04c803a5eafa7d0a5d4.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_fastrtps_c-959f58151c20e802122d.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_fastrtps_cpp-68b927b5a0c345b2ccee.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_introspection_c-e83a958610dc9a06263d.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs__rosidl_typesupport_introspection_cpp-3545e25f43a4edd27329.json",
+					"name" : "baxter_maintenance_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "baxter_maintenance_msgs__rs::@652f2a576a628e4ee078",
+					"jsonFile" : "target-baxter_maintenance_msgs__rs-3cff401b746e845329f3.json",
+					"name" : "baxter_maintenance_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs_s__rosidl_typesupport_c-ae4c18b4a3980c36694d.json",
+					"name" : "baxter_maintenance_msgs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs_s__rosidl_typesupport_fastrtps_c-e4d72bf6d9de64673424.json",
+					"name" : "baxter_maintenance_msgs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs_s__rosidl_typesupport_introspection_c-bca3f98f1a2707ea9f24.json",
+					"name" : "baxter_maintenance_msgs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "baxter_maintenance_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-baxter_maintenance_msgs_uninstall-fefa2463838c60f0cd31.json",
+					"name" : "baxter_maintenance_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e7a8fb758043da93f182.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs",
+		"source" : "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

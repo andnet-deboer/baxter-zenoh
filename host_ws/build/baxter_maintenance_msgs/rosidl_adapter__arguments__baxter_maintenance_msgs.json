@@ -1,0 +1,12 @@
+{
+  "package_name": "baxter_maintenance_msgs",
+  "non_idl_tuples": [
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/CalibrateArmData.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/CalibrateArmEnable.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/TareData.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/TareEnable.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/UpdateSource.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/UpdateSources.msg",
+    "/home/andnetdeboer/baxter_bridge/host_ws/src/baxter_maintenance_msgs:msg/UpdateStatus.msg"
+  ]
+}

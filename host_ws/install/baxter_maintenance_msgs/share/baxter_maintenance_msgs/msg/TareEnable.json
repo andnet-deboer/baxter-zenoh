@@ -1,0 +1,66 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "baxter_maintenance_msgs/msg/TareEnable",
+      "fields": [
+        {
+          "name": "is_enabled",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "uid",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "data",
+          "type": {
+            "type_id": 1,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": "baxter_maintenance_msgs/msg/TareData"
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": [
+      {
+        "type_name": "baxter_maintenance_msgs/msg/TareData",
+        "fields": [
+          {
+            "name": "tune_gravity_spring",
+            "type": {
+              "type_id": 15,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          }
+        ]
+      }
+    ]
+  },
+  "type_hashes": [
+    {
+      "type_name": "baxter_maintenance_msgs/msg/TareEnable",
+      "hash_string": "RIHS01_441eeac9365224118cbe8fead397060622faefe489a160e3bc7f10208e413690"
+    },
+    {
+      "type_name": "baxter_maintenance_msgs/msg/TareData",
+      "hash_string": "RIHS01_1219e9e854ac3e4ab47b8abbcb5635e4fa868f56583302855e11a55c95239221"
+    }
+  ]
+}

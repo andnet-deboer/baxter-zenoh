@@ -1,0 +1,20 @@
+{
+  "package_name": "baxter_maintenance_msgs",
+  "output_dir": "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_generator_type_description/baxter_maintenance_msgs",
+  "idl_tuples": [
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/CalibrateArmData.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/CalibrateArmEnable.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/TareData.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/TareEnable.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateSource.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateSources.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/rosidl_adapter/baxter_maintenance_msgs:msg/UpdateStatus.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "sensor_msgs:/opt/ros/kilted/share/sensor_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs"
+  ]
+}

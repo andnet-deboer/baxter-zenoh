@@ -1,0 +1,38 @@
+{
+  "package_name": "baxter_core_msgs",
+  "output_dir": "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_generator_type_description/baxter_core_msgs",
+  "idl_tuples": [
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/AnalogIOState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/AnalogIOStates.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/AnalogOutputCommand.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/AssemblyState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/AssemblyStates.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/CameraControl.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/CameraSettings.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/CollisionAvoidanceState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/CollisionDetectionState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/DigitalIOState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/DigitalIOStates.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/DigitalOutputCommand.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/EndEffectorCommand.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/EndEffectorProperties.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/EndEffectorState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/EndpointState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/EndpointStates.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/HeadPanCommand.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/HeadState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/JointCommand.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/NavigatorState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/NavigatorStates.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/RobustControllerStatus.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/SEAJointState.idl",
+    "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs/rosidl_adapter/baxter_core_msgs:msg/URDFConfiguration.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "std_msgs:/opt/ros/kilted/share/std_msgs",
+    "geometry_msgs:/opt/ros/kilted/share/geometry_msgs",
+    "sensor_msgs:/opt/ros/kilted/share/sensor_msgs",
+    "service_msgs:/opt/ros/kilted/share/service_msgs"
+  ]
+}

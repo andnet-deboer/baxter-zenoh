@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "baxter_maintenance_msgs__rs",
+		"source" : "/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_maintenance_msgs/baxter_maintenance_msgs__rs"
+	}
+}

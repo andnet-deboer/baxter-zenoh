@@ -1,0 +1,1061 @@
+[0.009s] Invoking command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andnetdeboer/baxter_bridge/host_ws/src/baxter_core_msgs -DCMAKE_INSTALL_PREFIX=/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs
+[0.204s] -- The C compiler identification is GNU 14.0.1
+[0.353s] -- The CXX compiler identification is GNU 14.0.1
+[0.377s] -- Detecting C compiler ABI info
+[0.494s] -- Detecting C compiler ABI info - done
+[0.505s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.506s] -- Detecting C compile features
+[0.507s] -- Detecting C compile features - done
+[0.517s] -- Detecting CXX compiler ABI info
+[0.637s] -- Detecting CXX compiler ABI info - done
+[0.651s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.651s] -- Detecting CXX compile features
+[0.652s] -- Detecting CXX compile features - done
+[0.658s] -- Found ament_cmake: 2.7.5 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.808s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.916s] -- Found rosidl_default_generators: 1.7.2 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[0.926s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.005s] -- Found rosidl_adapter: 4.9.6 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[1.008s] -- Found builtin_interfaces: 2.3.1 (/opt/ros/kilted/share/builtin_interfaces/cmake)
+[1.019s] -- Found std_msgs: 5.5.2 (/opt/ros/kilted/share/std_msgs/cmake)
+[1.032s] -- Found geometry_msgs: 5.5.2 (/opt/ros/kilted/share/geometry_msgs/cmake)
+[1.043s] -- Found sensor_msgs: 5.5.2 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[1.728s] -- Found ament_cmake_ros_core: 0.14.7 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[2.261s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.903s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.293s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.398s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.402s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[3.425s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.426s] -- Added test 'lint_cmake' to check CMake code style
+[3.427s] -- Added test 'xmllint' to check XML markup files
+[3.429s] -- Configuring done (3.4s)
+[3.487s] -- Generating done (0.0s)
+[3.497s] -- Build files have been written to: /home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs
+[3.506s] Invoked command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/andnetdeboer/baxter_bridge/host_ws/src/baxter_core_msgs -DCMAKE_INSTALL_PREFIX=/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs
+[3.506s] Invoking command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs -- -j22 -l22
+[3.578s] [  0%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.580s] [  0%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.590s] [  0%] Built target ament_cmake_python_copy_baxter_core_msgs
+[3.820s] running egg_info
+[3.821s] creating baxter_core_msgs.egg-info
+[3.843s] writing baxter_core_msgs.egg-info/PKG-INFO
+[3.843s] writing dependency_links to baxter_core_msgs.egg-info/dependency_links.txt
+[3.843s] writing top-level names to baxter_core_msgs.egg-info/top_level.txt
+[3.843s] writing manifest file 'baxter_core_msgs.egg-info/SOURCES.txt'
+[3.911s] reading manifest file 'baxter_core_msgs.egg-info/SOURCES.txt'
+[3.911s] writing manifest file 'baxter_core_msgs.egg-info/SOURCES.txt'
+[3.939s] [  0%] Built target ament_cmake_python_build_baxter_core_msgs_egg
+[4.515s] [  0%] Built target baxter_core_msgs__rosidl_generator_type_description
+[4.532s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.545s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.657s] [  1%] Built target baxter_core_msgs__rs
+[6.744s] [  1%] Built target baxter_core_msgs__cpp
+[7.104s] [  2%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_states__type_support.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_state__type_support.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_output_command__description.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_states__description.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_state__description.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_state__functions.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_io_states__functions.c.o[0m
+[7.104s] [  3%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_state__description.c.o[0m
+[7.105s] [  4%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_output_command__functions.c.o[0m
+[7.105s] [  4%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_state__type_support.c.o[0m
+[7.105s] [  4%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/analog_output_command__type_support.c.o[0m
+[7.106s] [  5%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_state__functions.c.o[0m
+[7.107s] [  5%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_control__description.c.o[0m
+[7.107s] [  5%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_states__description.c.o[0m
+[7.107s] [  6%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_control__functions.c.o[0m
+[7.107s] [  6%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_states__type_support.c.o[0m
+[7.108s] [  6%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_control__type_support.c.o[0m
+[7.108s] [  7%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_settings__description.c.o[0m
+[7.111s] [  7%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_settings__type_support.c.o[0m
+[7.113s] [  8%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_avoidance_state__description.c.o[0m
+[7.116s] [  9%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/assembly_states__functions.c.o[0m
+[7.138s] [  9%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/camera_settings__functions.c.o[0m
+[7.158s] [  9%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_avoidance_state__functions.c.o[0m
+[7.158s] [  9%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_detection_state__type_support.c.o[0m
+[7.159s] [  9%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_detection_state__functions.c.o[0m
+[7.159s] [ 10%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_state__description.c.o[0m
+[7.172s] [ 10%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.c.o[0m
+[7.172s] [ 10%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_state__functions.c.o[0m
+[7.172s] [ 10%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_states__description.c.o[0m
+[7.173s] [ 11%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/collision_detection_state__description.c.o[0m
+[7.175s] [ 12%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_states__type_support.c.o[0m
+[7.175s] [ 12%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_states__functions.c.o[0m
+[7.178s] [ 13%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_io_state__type_support.c.o[0m
+[7.178s] [ 13%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_output_command__description.c.o[0m
+[7.194s] [ 13%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_output_command__functions.c.o[0m
+[7.210s] [ 13%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_command__description.c.o[0m
+[7.212s] [ 14%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/digital_output_command__type_support.c.o[0m
+[7.220s] [ 15%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_properties__functions.c.o[0m
+[7.220s] [ 15%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_properties__type_support.c.o[0m
+[7.220s] [ 15%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_state__description.c.o[0m
+[7.220s] [ 15%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_properties__description.c.o[0m
+[7.220s] [ 16%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_state__functions.c.o[0m
+[7.222s] [ 16%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_state__type_support.c.o[0m
+[7.226s] [ 17%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_command__type_support.c.o[0m
+[7.226s] [ 17%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/end_effector_command__functions.c.o[0m
+[7.231s] [ 17%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_state__description.c.o[0m
+[7.232s] [ 18%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_state__functions.c.o[0m
+[7.233s] [ 18%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_state__type_support.c.o[0m
+[7.241s] [ 18%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_states__description.c.o[0m
+[7.242s] [ 19%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_states__functions.c.o[0m
+[7.265s] [ 20%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_pan_command__description.c.o[0m
+[7.265s] [ 21%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_state__description.c.o[0m
+[7.266s] [ 21%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_state__functions.c.o[0m
+[7.266s] [ 21%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_pan_command__type_support.c.o[0m
+[7.267s] [ 21%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/endpoint_states__type_support.c.o[0m
+[7.271s] [ 22%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/joint_command__description.c.o[0m
+[7.272s] [ 22%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_state__type_support.c.o[0m
+[7.287s] [ 22%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/joint_command__functions.c.o[0m
+[7.287s] [ 23%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_state__description.c.o[0m
+[7.288s] [ 23%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/joint_command__type_support.c.o[0m
+[7.288s] [ 23%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/head_pan_command__functions.c.o[0m
+[7.289s] [ 23%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_state__functions.c.o[0m
+[7.291s] [ 24%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_state__type_support.c.o[0m
+[7.310s] [ 24%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_states__description.c.o[0m
+[7.320s] [ 24%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/robust_controller_status__description.c.o[0m
+[7.322s] [ 25%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_states__type_support.c.o[0m
+[7.326s] [ 25%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/robust_controller_status__functions.c.o[0m
+[7.330s] [ 26%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/robust_controller_status__type_support.c.o[0m
+[7.330s] [ 26%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/navigator_states__functions.c.o[0m
+[7.331s] [ 26%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/sea_joint_state__description.c.o[0m
+[7.331s] [ 26%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/sea_joint_state__functions.c.o[0m
+[7.336s] [ 26%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/urdf_configuration__description.c.o[0m
+[7.339s] [ 27%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/sea_joint_state__type_support.c.o[0m
+[7.340s] [ 28%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/urdf_configuration__functions.c.o[0m
+[7.341s] [ 28%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_c.dir/rosidl_generator_c/baxter_core_msgs/msg/detail/urdf_configuration__type_support.c.o[0m
+[7.438s] [ 28%] [32m[1mLinking C shared library libbaxter_core_msgs__rosidl_generator_c.so[0m
+[7.492s] [ 28%] Built target baxter_core_msgs__rosidl_generator_c
+[7.506s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.506s] [ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.507s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.509s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.509s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.512s] [ 30%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.659s] [ 30%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/assembly_states__type_support.cpp.o[0m
+[8.659s] [ 31%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/analog_io_state__type_support.cpp.o[0m
+[8.660s] [ 32%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/analog_io_states__type_support.cpp.o[0m
+[8.660s] [ 32%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/analog_output_command__type_support.cpp.o[0m
+[8.660s] [ 32%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/assembly_state__type_support.cpp.o[0m
+[8.660s] [ 33%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/camera_control__type_support.cpp.o[0m
+[8.660s] [ 33%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/collision_avoidance_state__type_support.cpp.o[0m
+[8.662s] [ 33%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/camera_settings__type_support.cpp.o[0m
+[8.662s] [ 33%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/digital_io_state__type_support.cpp.o[0m
+[8.662s] [ 33%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/digital_io_states__type_support.cpp.o[0m
+[8.662s] [ 34%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/digital_output_command__type_support.cpp.o[0m
+[8.663s] [ 35%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/collision_detection_state__type_support.cpp.o[0m
+[8.666s] [ 35%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/end_effector_command__type_support.cpp.o[0m
+[8.666s] [ 35%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/end_effector_state__type_support.cpp.o[0m
+[8.668s] [ 36%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/end_effector_properties__type_support.cpp.o[0m
+[8.679s] [ 36%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/endpoint_state__type_support.cpp.o[0m
+[8.681s] [ 37%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/endpoint_states__type_support.cpp.o[0m
+[8.735s] [ 37%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/head_pan_command__type_support.cpp.o[0m
+[8.737s] [ 37%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/head_state__type_support.cpp.o[0m
+[8.739s] [ 38%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/joint_command__type_support.cpp.o[0m
+[8.742s] [ 38%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/navigator_state__type_support.cpp.o[0m
+[8.743s] [ 38%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/sea_joint_state__type_support.cpp.o[0m
+[8.743s] [ 39%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/urdf_configuration__type_support.cpp.o[0m
+[8.744s] [ 39%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/navigator_states__type_support.cpp.o[0m
+[8.744s] [ 40%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/baxter_core_msgs/msg/robust_controller_status__type_support.cpp.o[0m
+[8.806s] [ 40%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/analog_io_states__type_support.cpp.o[0m
+[8.808s] [ 41%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/analog_io_state__type_support.cpp.o[0m
+[8.809s] [ 42%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/assembly_state__type_support.cpp.o[0m
+[8.810s] [ 42%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/analog_output_command__type_support.cpp.o[0m
+[8.810s] [ 42%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/assembly_states__type_support.cpp.o[0m
+[8.810s] [ 43%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/camera_settings__type_support.cpp.o[0m
+[8.810s] [ 43%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/collision_avoidance_state__type_support.cpp.o[0m
+[8.810s] [ 43%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/camera_control__type_support.cpp.o[0m
+[8.810s] [ 43%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/digital_io_state__type_support.cpp.o[0m
+[8.811s] [ 43%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/end_effector_command__type_support.cpp.o[0m
+[8.811s] [ 44%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/collision_detection_state__type_support.cpp.o[0m
+[8.814s] [ 45%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/digital_output_command__type_support.cpp.o[0m
+[8.814s] [ 45%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/digital_io_states__type_support.cpp.o[0m
+[8.819s] [ 46%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/end_effector_state__type_support.cpp.o[0m
+[8.819s] [ 46%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/endpoint_states__type_support.cpp.o[0m
+[8.819s] [ 46%] [32m[1mLinking CXX shared library libbaxter_core_msgs__rosidl_typesupport_c.so[0m
+[8.823s] [ 46%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/endpoint_state__type_support.cpp.o[0m
+[8.836s] [ 46%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/end_effector_properties__type_support.cpp.o[0m
+[8.962s] [ 46%] Built target baxter_core_msgs__rosidl_typesupport_c
+[8.977s] [ 47%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/head_pan_command__type_support.cpp.o[0m
+[9.512s] [ 47%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/head_state__type_support.cpp.o[0m
+[9.550s] [ 48%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/joint_command__type_support.cpp.o[0m
+[9.551s] [ 48%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/navigator_state__type_support.cpp.o[0m
+[9.671s] [ 48%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/navigator_states__type_support.cpp.o[0m
+[9.695s] [ 49%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/robust_controller_status__type_support.cpp.o[0m
+[9.702s] [ 49%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/sea_joint_state__type_support.cpp.o[0m
+[9.733s] [ 49%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/baxter_core_msgs/msg/urdf_configuration__type_support.cpp.o[0m
+[9.768s] [ 49%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/analog_io_state__type_support.c.o[0m
+[9.775s] [ 49%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/analog_io_states__type_support.c.o[0m
+[9.779s] [ 50%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/analog_output_command__type_support.c.o[0m
+[9.799s] [ 50%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/assembly_state__type_support.c.o[0m
+[9.801s] [ 50%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/analog_io_states__type_support.cpp.o[0m
+[9.803s] [ 51%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/assembly_states__type_support.c.o[0m
+[9.806s] [ 51%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/camera_settings__type_support.c.o[0m
+[9.816s] [ 51%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/analog_io_state__type_support.cpp.o[0m
+[9.818s] [ 51%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/camera_control__type_support.c.o[0m
+[9.839s] [ 51%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/assembly_state__type_support.cpp.o[0m
+[9.849s] [ 52%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/analog_output_command__type_support.cpp.o[0m
+[9.855s] [ 53%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.c.o[0m
+[9.862s] [ 53%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/assembly_states__type_support.cpp.o[0m
+[9.866s] [ 54%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/camera_control__type_support.cpp.o[0m
+[9.883s] [ 54%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/camera_settings__type_support.cpp.o[0m
+[9.897s] [ 54%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/collision_detection_state__type_support.c.o[0m
+[9.914s] [ 54%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/digital_io_state__type_support.c.o[0m
+[9.914s] [ 55%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/digital_io_states__type_support.c.o[0m
+[9.948s] [ 56%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/collision_detection_state__type_support.cpp.o[0m
+[9.954s] [ 56%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.cpp.o[0m
+[9.964s] [ 56%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/digital_io_state__type_support.cpp.o[0m
+[9.980s] [ 56%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/analog_io_state__type_support.cpp.o[0m
+[9.982s] [ 57%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/digital_io_states__type_support.cpp.o[0m
+[9.992s] [ 57%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/digital_output_command__type_support.c.o[0m
+[10.053s] [ 57%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/end_effector_command__type_support.c.o[0m
+[10.172s] [ 58%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/end_effector_properties__type_support.c.o[0m
+[10.212s] [ 59%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/analog_io_states__type_support.cpp.o[0m
+[10.241s] [ 59%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/end_effector_state__type_support.c.o[0m
+[10.300s] [ 60%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/endpoint_state__type_support.c.o[0m
+[10.311s] [ 60%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/digital_output_command__type_support.cpp.o[0m
+[10.329s] [ 60%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/analog_output_command__type_support.cpp.o[0m
+[10.363s] [ 60%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/assembly_state__type_support.cpp.o[0m
+[10.385s] [ 60%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/endpoint_states__type_support.c.o[0m
+[10.438s] [ 60%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/end_effector_command__type_support.cpp.o[0m
+[10.501s] [ 60%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/head_pan_command__type_support.c.o[0m
+[10.555s] [ 61%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/assembly_states__type_support.cpp.o[0m
+[10.577s] [ 62%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/head_state__type_support.c.o[0m
+[10.581s] [ 63%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/end_effector_properties__type_support.cpp.o[0m
+[10.592s] [ 64%] [32m[1mLinking CXX shared library libbaxter_core_msgs__rosidl_typesupport_cpp.so[0m
+[10.593s] [ 64%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/analog_io_state__type_support_c.cpp.o[0m
+[10.640s] [ 64%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/camera_control__type_support.cpp.o[0m
+[10.648s] [ 64%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/joint_command__type_support.c.o[0m
+[10.648s] [ 64%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/end_effector_state__type_support.cpp.o[0m
+[10.715s] [ 64%] Built target baxter_core_msgs__rosidl_typesupport_cpp
+[10.727s] [ 64%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/navigator_state__type_support.c.o[0m
+[10.728s] [ 65%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/analog_io_states__type_support_c.cpp.o[0m
+[10.745s] [ 65%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/analog_output_command__type_support_c.cpp.o[0m
+[10.753s] [ 66%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/assembly_state__type_support_c.cpp.o[0m
+[10.757s] [ 66%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/camera_settings__type_support.cpp.o[0m
+[10.813s] [ 67%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/navigator_states__type_support.c.o[0m
+[10.871s] [ 68%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/collision_avoidance_state__type_support.cpp.o[0m
+[10.888s] [ 68%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/robust_controller_status__type_support.c.o[0m
+[10.921s] [ 68%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/assembly_states__type_support_c.cpp.o[0m
+[10.964s] [ 68%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/sea_joint_state__type_support.c.o[0m
+[10.994s] [ 68%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/collision_detection_state__type_support.cpp.o[0m
+[11.068s] [ 69%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/digital_io_state__type_support.cpp.o[0m
+[11.072s] [ 69%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/camera_control__type_support_c.cpp.o[0m
+[11.118s] [ 70%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/baxter_core_msgs/msg/detail/urdf_configuration__type_support.c.o[0m
+[11.180s] [ 70%] [32m[1mLinking C shared library libbaxter_core_msgs__rosidl_typesupport_introspection_c.so[0m
+[11.189s] [ 71%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/camera_settings__type_support_c.cpp.o[0m
+[11.215s] [ 71%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support_c.cpp.o[0m
+[11.249s] [ 71%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/collision_detection_state__type_support_c.cpp.o[0m
+[11.289s] [ 71%] Built target baxter_core_msgs__rosidl_typesupport_introspection_c
+[11.327s] [ 72%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/digital_io_state__type_support_c.cpp.o[0m
+[11.416s] [ 72%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/digital_io_states__type_support_c.cpp.o[0m
+[11.487s] [ 72%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/digital_io_states__type_support.cpp.o[0m
+[11.551s] [ 72%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/digital_output_command__type_support.cpp.o[0m
+[11.694s] [ 73%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/endpoint_states__type_support.cpp.o[0m
+[11.710s] [ 73%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/endpoint_state__type_support.cpp.o[0m
+[11.781s] [ 73%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/head_state__type_support.cpp.o[0m
+[11.797s] [ 73%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/head_pan_command__type_support.cpp.o[0m
+[11.870s] [ 74%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/joint_command__type_support.cpp.o[0m
+[11.873s] [ 74%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/navigator_state__type_support.cpp.o[0m
+[11.961s] [ 75%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/navigator_states__type_support.cpp.o[0m
+[12.017s] [ 75%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/robust_controller_status__type_support.cpp.o[0m
+[12.111s] [ 76%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/end_effector_command__type_support.cpp.o[0m
+[12.169s] [ 76%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/end_effector_properties__type_support.cpp.o[0m
+[12.214s] [ 76%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/end_effector_state__type_support.cpp.o[0m
+[12.235s] [ 76%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/digital_output_command__type_support_c.cpp.o[0m
+[12.333s] [ 77%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/endpoint_state__type_support.cpp.o[0m
+[12.387s] [ 77%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/sea_joint_state__type_support.cpp.o[0m
+[12.399s] [ 77%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/endpoint_states__type_support.cpp.o[0m
+[12.435s] [ 77%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/head_pan_command__type_support.cpp.o[0m
+[12.525s] [ 78%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/head_state__type_support.cpp.o[0m
+[12.561s] [ 79%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/end_effector_command__type_support_c.cpp.o[0m
+[12.607s] [ 79%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/end_effector_properties__type_support_c.cpp.o[0m
+[12.632s] [ 80%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/baxter_core_msgs/msg/detail/urdf_configuration__type_support.cpp.o[0m
+[12.654s] [ 80%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/joint_command__type_support.cpp.o[0m
+[12.684s] [ 81%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/navigator_state__type_support.cpp.o[0m
+[12.691s] [ 82%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/end_effector_state__type_support_c.cpp.o[0m
+[12.882s] [ 82%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/navigator_states__type_support.cpp.o[0m
+[12.947s] [ 82%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/endpoint_state__type_support_c.cpp.o[0m
+[13.022s] [ 82%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/robust_controller_status__type_support.cpp.o[0m
+[13.170s] [ 83%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/sea_joint_state__type_support.cpp.o[0m
+[13.222s] [ 83%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/endpoint_states__type_support_c.cpp.o[0m
+[13.403s] [ 83%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/baxter_core_msgs/msg/detail/dds_fastrtps/urdf_configuration__type_support.cpp.o[0m
+[13.501s] [ 84%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/head_pan_command__type_support_c.cpp.o[0m
+[13.525s] [ 84%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/head_state__type_support_c.cpp.o[0m
+[13.527s] [ 84%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/joint_command__type_support_c.cpp.o[0m
+[13.617s] [ 85%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/navigator_state__type_support_c.cpp.o[0m
+[13.633s] [ 85%] [32m[1mLinking CXX shared library libbaxter_core_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[13.670s] [ 85%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/navigator_states__type_support_c.cpp.o[0m
+[13.732s] [ 85%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/robust_controller_status__type_support_c.cpp.o[0m
+[13.758s] [ 86%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/sea_joint_state__type_support_c.cpp.o[0m
+[13.771s] [ 86%] Built target baxter_core_msgs__rosidl_typesupport_introspection_cpp
+[13.784s] [ 86%] [32mBuilding CXX object CMakeFiles/baxter_core_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/baxter_core_msgs/msg/detail/urdf_configuration__type_support_c.cpp.o[0m
+[14.761s] [ 86%] [32m[1mLinking CXX shared library libbaxter_core_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.848s] [ 86%] Built target baxter_core_msgs__rosidl_typesupport_fastrtps_cpp
+[14.857s] [ 87%] [32m[1mLinking CXX shared library libbaxter_core_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[14.931s] [ 87%] Built target baxter_core_msgs__rosidl_typesupport_fastrtps_c
+[14.957s] [ 87%] Built target baxter_core_msgs
+[14.987s] [ 87%] [34m[1mGenerating Python code for ROS interfaces[0m
+[17.292s] [ 87%] Built target baxter_core_msgs__py
+[17.320s] [ 88%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_analog_io_state_s.c.o[0m
+[17.320s] [ 88%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_analog_io_states_s.c.o[0m
+[17.321s] [ 88%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_analog_output_command_s.c.o[0m
+[17.322s] [ 88%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_collision_avoidance_state_s.c.o[0m
+[17.323s] [ 88%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_camera_control_s.c.o[0m
+[17.324s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_camera_settings_s.c.o[0m
+[17.324s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_digital_output_command_s.c.o[0m
+[17.325s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_assembly_states_s.c.o[0m
+[17.325s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_endpoint_states_s.c.o[0m
+[17.325s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_digital_io_state_s.c.o[0m
+[17.325s] [ 90%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_digital_io_states_s.c.o[0m
+[17.325s] [ 91%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_collision_detection_state_s.c.o[0m
+[17.325s] [ 92%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_end_effector_state_s.c.o[0m
+[17.325s] [ 93%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_assembly_state_s.c.o[0m
+[17.325s] [ 93%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_endpoint_state_s.c.o[0m
+[17.327s] [ 94%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_head_pan_command_s.c.o[0m
+[17.328s] [ 94%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_end_effector_properties_s.c.o[0m
+[17.328s] [ 94%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_end_effector_command_s.c.o[0m
+[17.328s] [ 94%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_head_state_s.c.o[0m
+[17.329s] [ 95%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_joint_command_s.c.o[0m
+[17.331s] [ 95%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_navigator_states_s.c.o[0m
+[17.336s] [ 95%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_navigator_state_s.c.o[0m
+[17.562s] [ 96%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_robust_controller_status_s.c.o[0m
+[17.582s] [ 96%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_sea_joint_state_s.c.o[0m
+[17.586s] [ 96%] [32mBuilding C object CMakeFiles/baxter_core_msgs__rosidl_generator_py.dir/rosidl_generator_py/baxter_core_msgs/msg/_urdf_configuration_s.c.o[0m
+[17.948s] [ 97%] [32m[1mLinking C shared library libbaxter_core_msgs__rosidl_generator_py.so[0m
+[17.999s] [ 97%] Built target baxter_core_msgs__rosidl_generator_py
+[18.019s] [ 97%] [32mBuilding C object CMakeFiles/baxter_core_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[18.019s] [ 98%] [32mBuilding C object CMakeFiles/baxter_core_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[18.026s] [ 98%] [32mBuilding C object CMakeFiles/baxter_core_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[18.222s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[18.226s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_c.so[0m
+[18.238s] [100%] [32m[1mLinking C shared module rosidl_generator_py/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[18.257s] [100%] Built target baxter_core_msgs_s__rosidl_typesupport_introspection_c
+[18.260s] [100%] Built target baxter_core_msgs_s__rosidl_typesupport_c
+[18.276s] [100%] Built target baxter_core_msgs_s__rosidl_typesupport_fastrtps_c
+[18.288s] Invoked command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs -- -j22 -l22
+[18.290s] Invoking command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs
+[18.299s] -- Install configuration: ""
+[18.299s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/ament_index/resource_index/rosidl_interfaces/baxter_core_msgs
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOState.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOStates.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogOutputCommand.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyState.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyStates.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraControl.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraSettings.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionAvoidanceState.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionDetectionState.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOState.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOStates.json
+[18.300s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalOutputCommand.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorCommand.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorProperties.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorState.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointState.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointStates.json
+[18.301s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadPanCommand.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadState.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/JointCommand.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorState.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorStates.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/RobustControllerStatus.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/SEAJointState.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/URDFConfiguration.json
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.302s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__type_support.h
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__functions.c
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__description.c
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__struct.h
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__type_support.c
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__type_support.h
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__functions.c
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__functions.h
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__type_support.c
+[18.303s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__struct.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__type_support.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__description.c
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__struct.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__type_support.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__description.c
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__functions.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__functions.c
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__type_support.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__type_support.c
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__struct.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__functions.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__type_support.h
+[18.304s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.c
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__functions.c
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__type_support.c
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__struct.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__type_support.c
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__struct.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__struct.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__functions.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__description.c
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__struct.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__type_support.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__type_support.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__functions.h
+[18.305s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__type_support.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__functions.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__struct.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__functions.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__struct.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__functions.c
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__functions.c
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__struct.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__type_support.c
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__description.c
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__functions.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__functions.c
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__functions.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__functions.h
+[18.306s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__struct.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__type_support.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__description.c
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__struct.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__functions.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__description.c
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__type_support.c
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__type_support.c
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__functions.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__functions.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__type_support.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__functions.h
+[18.307s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__functions.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__type_support.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__struct.h
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__type_support.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__description.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__struct.h
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__functions.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__description.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__type_support.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__type_support.h
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__description.c
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__struct.h
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__struct.h
+[18.308s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__type_support.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__functions.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__functions.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__functions.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__type_support.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__type_support.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__description.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__struct.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__functions.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__functions.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__description.c
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__functions.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__struct.h
+[18.309s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__type_support.c
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__type_support.c
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__description.c
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__functions.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__type_support.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__type_support.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__struct.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__type_support.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__type_support.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__type_support.c
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__functions.c
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__struct.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__functions.h
+[18.310s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__type_support.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__type_support.c
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__struct.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__functions.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__functions.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__struct.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__functions.c
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__type_support.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__functions.c
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__description.c
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__functions.h
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__type_support.c
+[18.311s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__functions.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__functions.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__functions.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__functions.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__description.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__description.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__type_support.h
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__type_support.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__type_support.h
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__description.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__description.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__description.c
+[18.312s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__description.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__description.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__description.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__functions.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__struct.h
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__type_support.h
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__type_support.h
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__functions.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__type_support.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__description.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__functions.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__type_support.c
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__struct.h
+[18.313s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__functions.h
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__type_support.h
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__functions.h
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__functions.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__type_support.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__type_support.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__functions.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__functions.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__description.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__description.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__type_support.c
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__functions.h
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_io_states.h
+[18.314s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/navigator_states.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_io_states.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_state.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/assembly_state.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/joint_command.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/rosidl_generator_c__visibility_control.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_command.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/sea_joint_state.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/robust_controller_status.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/head_state.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_io_state.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/head_pan_command.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/camera_control.h
+[18.315s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/camera_settings.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_output_command.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_properties.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/navigator_state.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/assembly_states.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_output_command.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/urdf_configuration.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_io_state.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/collision_avoidance_state.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/collision_detection_state.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/endpoint_state.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/endpoint_states.h
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/library_path.sh
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/library_path.dsv
+[18.316s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_generator_c.so
+[18.317s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_generator_c.so" to ""
+[18.317s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.317s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.317s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.317s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__rosidl_typesupport_fastrtps_c.h
+[18.317s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__rosidl_typesupport_fastrtps_c.h
+[18.317s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__rosidl_typesupport_fastrtps_c.h
+[18.317s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_c.h
+[18.317s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__rosidl_typesupport_fastrtps_c.h
+[18.318s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__rosidl_typesupport_fastrtps_c.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[18.319s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_fastrtps_c.so
+[18.319s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.319s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.319s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.320s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__type_support.c
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__type_support.c
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__rosidl_typesupport_introspection_c.h
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__type_support.c
+[18.320s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.c
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__type_support.c
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__type_support.c
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__type_support.c
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__rosidl_typesupport_introspection_c.h
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__type_support.c
+[18.321s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__rosidl_typesupport_introspection_c.h
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__rosidl_typesupport_introspection_c.h
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__rosidl_typesupport_introspection_c.h
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__rosidl_typesupport_introspection_c.h
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__rosidl_typesupport_introspection_c.h
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__type_support.c
+[18.322s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__rosidl_typesupport_introspection_c.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__rosidl_typesupport_introspection_c.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__rosidl_typesupport_introspection_c.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__rosidl_typesupport_introspection_c.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__rosidl_typesupport_introspection_c.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__type_support.c
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_introspection_c.so
+[18.323s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_introspection_c.so" to ""
+[18.323s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_c.so
+[18.324s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_c.so" to ""
+[18.324s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.324s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/assembly_states.hpp
+[18.324s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__traits.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__type_support.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__traits.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__builder.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__traits.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__traits.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__struct.hpp
+[18.324s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__struct.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__type_support.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__builder.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__builder.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__type_support.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__struct.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__struct.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__struct.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__type_support.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__builder.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__builder.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__type_support.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__builder.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__traits.hpp
+[18.325s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__builder.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__traits.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__builder.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__type_support.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__traits.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__traits.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__traits.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__struct.hpp
+[18.326s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__traits.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__struct.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__traits.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__struct.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__struct.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__type_support.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__traits.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__builder.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__struct.hpp
+[18.327s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__struct.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__type_support.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__traits.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__traits.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__type_support.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__builder.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__type_support.hpp
+[18.328s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__type_support.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__builder.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__type_support.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__type_support.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__struct.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__type_support.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__builder.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__traits.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__type_support.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__builder.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__struct.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/head_pan_command.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_command.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/robust_controller_status.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_output_command.hpp
+[18.329s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/assembly_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/endpoint_states.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/navigator_states.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_properties.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/camera_settings.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_output_command.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_io_states.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/end_effector_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/joint_command.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/urdf_configuration.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_io_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/sea_joint_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/collision_avoidance_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/endpoint_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/navigator_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/head_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/collision_detection_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/digital_io_state.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/analog_io_states.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/camera_control.hpp
+[18.330s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.330s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.330s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.330s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/dds_fastrtps
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__rosidl_typesupport_fastrtps_cpp.hpp
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.331s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_fastrtps_cpp.so
+[18.332s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.332s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs
+[18.332s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg
+[18.332s] -- Up-to-date: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_state__rosidl_typesupport_introspection_cpp.hpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_state__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_control__type_support.cpp
+[18.332s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_state__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/urdf_configuration__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/camera_settings__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_output_command__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_states__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/endpoint_states__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/sea_joint_state__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_detection_state__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/digital_io_states__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_command__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_output_command__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_properties__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/assembly_states__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/robust_controller_status__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/collision_avoidance_state__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/joint_command__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/head_pan_command__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/end_effector_state__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/navigator_state__rosidl_typesupport_introspection_cpp.hpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/include/baxter_core_msgs/baxter_core_msgs/msg/detail/analog_io_states__type_support.cpp
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_introspection_cpp.so
+[18.333s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_cpp.so
+[18.333s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_typesupport_cpp.so" to ""
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/pythonpath.sh
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/pythonpath.dsv
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs-0.0.0-py3.12.egg-info
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/__init__.py
+[18.333s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/__init__.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_output_command.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_detection_state.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_state.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_joint_command_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_pan_command_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_states_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_output_command_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_command_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_states.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_states.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_settings_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_states_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_states.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_robust_controller_status_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_control.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_command.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_properties.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_settings.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_states_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_avoidance_state.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_sea_joint_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_output_command_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_state.py
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_avoidance_state_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_control_s.c
+[18.334s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_output_command.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_states.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_states.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_states_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_properties_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_state_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_detection_state_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_urdf_configuration_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_urdf_configuration.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_sea_joint_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_pan_command.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_state_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_joint_command.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_states_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_state.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_state_s.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_robust_controller_status.py
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_introspection_c.so
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_c.so
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_c.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.335s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/_baxter_core_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.405s] Listing '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs'...
+[18.405s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/__init__.py'...
+[18.405s] Listing '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg'...
+[18.405s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/__init__.py'...
+[18.405s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_state.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_io_states.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_analog_output_command.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_state.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_assembly_states.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_control.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_camera_settings.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_avoidance_state.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_collision_detection_state.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_state.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_io_states.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_digital_output_command.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_command.py'...
+[18.406s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_properties.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_end_effector_state.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_state.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_endpoint_states.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_pan_command.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_head_state.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_joint_command.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_state.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_navigator_states.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_robust_controller_status.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_sea_joint_state.py'...
+[18.407s] Compiling '/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/msg/_urdf_configuration.py'...
+[18.411s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.411s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[18.411s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_introspection_c.so
+[18.412s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[18.412s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_c.so
+[18.412s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/python3.12/site-packages/baxter_core_msgs/baxter_core_msgs_s__rosidl_typesupport_c.so" to ""
+[18.412s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_generator_py.so
+[18.413s] -- Set non-toolchain portion of runtime path of "/home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/lib/libbaxter_core_msgs__rosidl_generator_py.so" to ""
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/ament_index/resource_index/rust_packages/baxter_core_msgs
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/src
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/src/msg
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/src/msg/rmw.rs
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/src/lib.rs
+[18.413s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/src/msg.rs
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/Cargo.toml
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/rust/build.rs
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOState.idl
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOStates.idl
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogOutputCommand.idl
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyState.idl
+[18.414s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyStates.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraControl.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraSettings.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionAvoidanceState.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionDetectionState.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOState.idl
+[18.415s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOStates.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalOutputCommand.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorCommand.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorProperties.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorState.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointState.idl
+[18.416s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointStates.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadPanCommand.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadState.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/JointCommand.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorState.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorStates.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/RobustControllerStatus.idl
+[18.417s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/SEAJointState.idl
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/URDFConfiguration.idl
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOState.msg
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogIOStates.msg
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AnalogOutputCommand.msg
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyState.msg
+[18.418s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/AssemblyStates.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraControl.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CameraSettings.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionAvoidanceState.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/CollisionDetectionState.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOState.msg
+[18.419s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalIOStates.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/DigitalOutputCommand.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorCommand.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorProperties.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndEffectorState.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointState.msg
+[18.420s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/EndpointStates.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadPanCommand.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/HeadState.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/JointCommand.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorState.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/NavigatorStates.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/RobustControllerStatus.msg
+[18.421s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/SEAJointState.msg
+[18.422s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/msg/URDFConfiguration.msg
+[18.422s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/mapping_rules.yaml
+[18.422s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/ament_index/resource_index/package_run_dependencies/baxter_core_msgs
+[18.422s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/ament_index/resource_index/parent_prefix_path/baxter_core_msgs
+[18.422s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/ament_prefix_path.sh
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/ament_prefix_path.dsv
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/path.sh
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/environment/path.dsv
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/local_setup.bash
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/local_setup.sh
+[18.423s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/local_setup.zsh
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/local_setup.dsv
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/package.dsv
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/ament_index/resource_index/packages/baxter_core_msgs
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_generator_cExport.cmake
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_generator_cExport-noconfig.cmake
+[18.424s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[18.425s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[18.425s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_introspection_cExport.cmake
+[18.425s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[18.425s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_cExport.cmake
+[18.425s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_generator_cppExport.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[18.426s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_cppExport.cmake
+[18.427s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[18.427s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_generator_pyExport.cmake
+[18.427s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/export_baxter_core_msgs__rosidl_generator_pyExport-noconfig.cmake
+[18.427s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/rosidl_cmake-extras.cmake
+[18.427s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgsConfig.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/cmake/baxter_core_msgsConfig-version.cmake
+[18.428s] -- Installing: /home/andnetdeboer/baxter_bridge/host_ws/install/baxter_core_msgs/share/baxter_core_msgs/package.xml
+[18.431s] Invoked command in '/home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/andnetdeboer/baxter_bridge/host_ws/build/baxter_core_msgs

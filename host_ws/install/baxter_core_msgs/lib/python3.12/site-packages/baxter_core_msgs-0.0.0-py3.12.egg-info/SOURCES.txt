@@ -1,0 +1,6 @@
+setup.py
+baxter_core_msgs/__init__.py
+baxter_core_msgs.egg-info/PKG-INFO
+baxter_core_msgs.egg-info/SOURCES.txt
+baxter_core_msgs.egg-info/dependency_links.txt
+baxter_core_msgs.egg-info/top_level.txt

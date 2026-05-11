@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "baxter_maintenance_msgs/msg/CalibrateArmData",
+      "fields": [
+        {
+          "name": "suppress_write_to_file",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "baxter_maintenance_msgs/msg/CalibrateArmData",
+      "hash_string": "RIHS01_2b909f90e25eda6fc21a37b5c4d69ee514661847b25174bb33b88dee385ff5ec"
+    }
+  ]
+}
