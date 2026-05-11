@@ -4,15 +4,15 @@
 ```
 docker build -t baxter_bridge:latest .
 ```
-
-2. 
-```
-docker run --rm --network=host -t baxter_bridge:latest .
-```
-
-3.
+2.
 ```
 sudo apt install ros-$ROS_DISTRO-rmw-zenoh-cpp
+source /opt/$ROS_DISTRO/setup.bash
+
+```
+3. 
+```
+docker run --rm --network=host -t baxter_bridge:latest .
 ```
 
 4. In a separate terminal on your laptop, source the ROS 2 workspace
