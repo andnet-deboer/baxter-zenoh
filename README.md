@@ -6,7 +6,6 @@ docker build -t baxter_bridge:latest .
 ```
 2.
 ```
-sudo apt install ros-$ROS_DISTRO-rmw-zenoh-cpp
 source /opt/$ROS_DISTRO/setup.bash
 
 ```
