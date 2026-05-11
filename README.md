@@ -14,6 +14,9 @@ docker run --rm --network=host -t baxter_bridge:latest .
 ```
 source /opt/ros/kilted/setup.bash
 
+unset ROS_DOMAIN_ID
+export RMW_IMPLEMENTATION=rmw_zenoh_cpp
+
 cd ~/host-ws/
 colcon build
 source install/setup.bash
