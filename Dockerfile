@@ -12,11 +12,10 @@ https://ros.packages.techfak.net noble main" \
         ros-one-desktop=1.5.0-1noble.20250602.0114 \
         python3-catkin-tools \
         python3-rosdep && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*ao
 
 # ROS 1 baxter messages (catkin, built against ROS-O)
-COPY ros1_msgs/baxter_core_msgs       /ros1_ws/src/baxter_core_msgs
-COPY ros1_msgs/baxter_maintenance_msgs /ros1_ws/src/baxter_maintenance_msgs
+COPY ros1_msgs/ /ros1_ws/src/
 
 RUN bash -c "\
     source /opt/ros/one/setup.bash && \
