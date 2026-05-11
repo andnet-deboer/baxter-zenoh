@@ -23,8 +23,7 @@ RUN bash -c "\
     catkin_make"
 
 # ROS 2 baxter messages (colcon, built against Kilted)
-COPY ros2_msgs/baxter_core_msgs       /ros2_ws/src/baxter_core_msgs
-COPY ros2_msgs/baxter_maintenance_msgs /ros2_ws/src/baxter_maintenance_msgs
+COPY ros2_msgs/ /ros2_ws/src/
 
 RUN bash -c "\
     source /opt/ros/kilted/setup.bash && \
