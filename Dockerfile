@@ -31,12 +31,11 @@ RUN bash -c "\
     colcon build --packages-select baxter_core_msgs baxter_maintenance_msgs"
 
 # ros1_bridge from source (master, pinned)
-ARG BRIDGE_SHA=12f279a
 RUN git clone --branch kilted --single-branch \
     https://github.com/andnet-deboer/ros1_bridge \
     /bridge_ws/src/ros1_bridge && \
-    git -C /bridge_ws/src/ros1_bridge checkout ${BRIDGE_SHA}
-
+    git -C /bridge_ws/src/ros1_bridge checkout
+    
 RUN bash -c "\
     source /opt/ros/one/setup.bash && \
     source /ros1_ws/devel/setup.bash && \
